@@ -27,7 +27,7 @@ app.use('/api/v1/post', require('./routes/postRoues'))
 app.get('/', (req, res)=>{
   return res.send({
     'success': true,
-    'message': 'Node SServer Running'
+    'message': 'Node Server Running'
   })
 })
 // PORT
