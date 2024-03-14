@@ -23,6 +23,13 @@ app.use(morgan('dev'))
 app.use('/api/v1/auth', require('./routes/userRoutes'))
 app.use('/api/v1/post', require('./routes/postRoues'))
 
+// HOME
+app.get('/', (req, res)=>{
+  return res.send({
+    'success': true,
+    'message': 'Node SServer Running'
+  })
+})
 // PORT
 const PORT = process.env.PORT || 8080
 
